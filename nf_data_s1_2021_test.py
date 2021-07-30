@@ -1,8 +1,6 @@
-
-123
 from nf_functions import cal_end_number,return_option,return_length
 
-file_path = 'NFDC_2020_Final.dat'
+file_path = 'NFDC_2021_test_20210730.dat'
 
 row_number=0
 number_question=['Q4','Q8_1','Q6'] 
@@ -83,7 +81,7 @@ record_title='Interview_number|familycode|group_one_repeat_number|'\
 				+'q_6_3_code|q_6_3|q_7_3_code|q_7_3|q_8_3|'\
 				+'s_1_code|s_1|s_2_code|s_2|s_3_code|s_3|q_9_1_code|q_9_1|q_9_2_code|q_9_2|q_9_3_code|q_9_3|'\
 				+'e_5_1_code|e_5_1|e_5_2_code|e_5_2|e_5_3_code|e_5_3'
-with open('data_result/nf_result_2021_S1_test_20210526.txt', 'w') as file_object:
+with open('data_result/nf_result_2021_S1_test_20210730.txt', 'w') as file_object:
 		file_object.write(record_title+'\n')      
 		for record in records:
 			file_object.write(record+'\n')
